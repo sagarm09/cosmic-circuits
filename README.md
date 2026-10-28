@@ -1,2 +1,3 @@
 # cosmic-circuits
 Cosmic Circuits: a personal website about space, electronics, code and nature, with a scroll-driven shuttle launch.
+This is my personal website for Stardance, called Cosmic Circuits. It has four sections: Home, About, Interests and Contact. The theme is dark space with green and cyan accents. As you scroll, a space shuttle lifts off from a forest treeline, the sky fades into stars, and an altitude counter climbs from 0 to 400 km. The About text lights up word by word, and the interest rows draw themselves in. It's built with plain HTML, CSS and JavaScript.

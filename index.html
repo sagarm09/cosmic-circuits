@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Cosmic Circuits</title>
+<meta name="description" content="Personal site: space, electronics, code, nature and security.">
+<meta name="theme-color" content="#060b14">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Background: stars, dusk glow, shuttle, treeline. All driven by scroll. -->
+<div class="stars s1" aria-hidden="true"></div>
+<div class="stars s2" aria-hidden="true"></div>
+<div class="dusk" aria-hidden="true"></div>
+
+<svg class="rocket" viewBox="0 0 64 190" aria-hidden="true">
+  <defs><linearGradient id="fl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a2e425"/><stop offset=".5" stop-color="#5de0e6"/><stop offset="1" stop-color="#5de0e6" stop-opacity="0"/></linearGradient></defs>
+  <path class="flame" d="M24 146Q32 195 40 146Z" fill="url(#fl)"/>
+  <path d="M24 100L3 146L24 136Z M40 100L61 146L40 136Z" fill="#5de0e6"/>
+  <rect x="14" y="48" width="9" height="98" rx="4" fill="#f1f6f0"/>
+  <rect x="41" y="48" width="9" height="98" rx="4" fill="#f1f6f0"/>
+  <path d="M14 52Q18.5 34 23 52Z M41 52Q45.5 34 50 52Z" fill="#a2e425"/>
+  <rect x="24" y="14" width="16" height="132" rx="8" fill="#cfe3d4"/>
+  <path d="M24 20Q32 -8 40 20Z" fill="#a2e425"/>
+</svg>
+
+<svg class="ground" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <symbol id="pine" viewBox="0 0 60 90"><path d="M30 0L48 34H38L54 66H6L22 34H12ZM27 66h6v24h-6Z"/></symbol>
+  <path d="M0 220V150Q240 110 520 150T1040 140T1440 130V220Z" fill="#0d2a24"/>
+  <g fill="#0a211c">
+    <use href="#pine" x="40" y="110" width="70" height="105"/><use href="#pine" x="110" y="140" width="50" height="75"/>
+    <use href="#pine" x="190" y="80" width="90" height="135"/><use href="#pine" x="320" y="125" width="60" height="90"/>
+    <use href="#pine" x="410" y="95" width="80" height="120"/><use href="#pine" x="980" y="110" width="70" height="105"/>
+    <use href="#pine" x="1060" y="73" width="95" height="142"/><use href="#pine" x="1150" y="133" width="55" height="82"/>
+    <use href="#pine" x="1240" y="88" width="85" height="127"/><use href="#pine" x="1340" y="118" width="65" height="97"/>
+  </g>
+  <path d="M0 220V190Q360 165 720 190T1440 180V220Z" fill="#07140f"/>
+</svg>
+
+<!-- Progress rail: also the navigation. Altitude readout updates as you scroll. -->
+<nav class="rail" aria-label="Sections">
+  <div class="fill"></div>
+  <a class="node" href="#home"><span>Home</span></a>
+  <a class="node" href="#about"><span>About</span></a>
+  <a class="node" href="#interests"><span>Interests</span></a>
+  <a class="node" href="#contact"><span>Contact</span></a>
+</nav>
+<div class="alt" aria-hidden="true"><span id="alt">0</span><small>km</small></div>
+
+<main>
+  <section id="home">
+    <div class="hero-copy">
+      <!-- EDIT: your name and tagline -->
+      <h1>Your Name</h1>
+      <p class="tag">Building things between space and silicon.</p>
+      <p class="hint">Scroll to launch</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <!-- EDIT: write your own sentence here. Words light up as you scroll. -->
+    <p class="statement">I like knowing how things work: the engines on a space shuttle, the traces on a circuit board, the code that runs on top of them, and the weak spots an attacker would look for. When I'm not at a screen, I'd rather be somewhere green.</p>
+  </section>
+
+  <section id="interests">
+    <h2>What I'm into</h2>
+    <ul class="list">
+      <li style="--i:0"><strong>Space shuttles</strong><span>Launch sequences, orbiters, and the engineering that gets people to orbit.</span></li>
+      <li style="--i:1"><strong>Electronics</strong><span>Circuits, microcontrollers, and making a small board do something useful.</span></li>
+      <li style="--i:2"><strong>Coding</strong><span>Turning ideas into working programs, one commit at a time.</span></li>
+      <li style="--i:3"><strong>Nature</strong><span>Forests, hills and weather: the original well-designed system.</span></li>
+      <li style="--i:4"><strong>Computers</strong><span>How the hardware, the operating system and the network fit together.</span></li>
+      <li style="--i:5"><strong>Cybersecurity</strong><span>Learning how systems break so I can help build ones that don't.</span></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="lead">Got an idea, a bug report, or something to build together? Send it over.</p>
+    <div class="actions">
+      <!-- EDIT: your email and GitHub -->
+      <a class="btn" href="mailto:you@example.com">Email me</a>
+      <a class="btn" href="https://github.com/your-username">GitHub</a>
+    </div>
+    <p class="foot">Made for Hack Club Stardance.</p>
+  </section>
+</main>
+
+</body>
+</html>
